@@ -106,10 +106,10 @@ export default function MemberLayout({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Debug info - Remove in production */}
+      {/* Debug info - Remove in production
       <div className="fixed top-0 right-0 z-[9999] bg-red-500 text-white p-2 text-xs">
         Debug: {pathname} | Sidebar: {sidebarOpen ? "Open" : "Closed"}
-      </div>
+      </div> */}
 
       {/* Mobile Sidebar Overlay */}
       <AnimatePresence>
