@@ -1,0 +1,57 @@
+/* src/styles/components.css */
+
+/* Timeline Component */
+.timeline-container {
+  @apply relative;
+}
+
+.timeline-line {
+  @apply absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200;
+}
+
+.timeline-item {
+  @apply relative flex items-start space-x-3 pb-8;
+}
+
+.timeline-marker {
+  @apply flex-shrink-0 w-8 h-8 bg-white border-2 border-primary-500 rounded-full flex items-center justify-center relative z-10;
+}
+
+/* Chat Messages */
+.chat-message {
+  @apply max-w-xs lg:max-w-md px-4 py-2 rounded-2xl;
+}
+
+.chat-message-sent {
+  @apply bg-primary-500 text-white ml-auto rounded-br-sm;
+}
+
+.chat-message-received {
+  @apply bg-white border border-gray-200 text-gray-900 mr-auto rounded-bl-sm;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  @apply fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-40;
+}
+
+.bottom-nav-item {
+  @apply flex-1 flex flex-col items-center justify-center py-2 text-xs font-medium;
+}
+
+.bottom-nav-active {
+  @apply text-primary-600;
+}
+
+.bottom-nav-inactive {
+  @apply text-gray-400;
+}

@@ -1,0 +1,6 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="150" cy="80" r="40" fill="#3B82F6"/>
+  <path d="M130 70L150 50L170 70V90H130V70Z" fill="white"/>
+  <path d="M120 110H180C185.523 110 190 114.477 190 120V140C190 145.523 185.523 150 180 150H120C114.477 150 110 145.523 110 140V120C110 114.477 114.477 110 120 110Z" fill="#10B981"/>
+  <text x="150" y="130" text-anchor="middle" fill="white" font-size="12">ROSCA</text>
+</svg>
