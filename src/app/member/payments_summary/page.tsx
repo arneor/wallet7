@@ -1,16 +1,18 @@
-import { PaymentHistory } from '@/components/member/PaymentHistory';
-import { PaymentDueCard } from '@/components/member/PaymentDueCard';
+import { PaymentHistory } from "@/components/member/PaymentHistory";
+import { PaymentDueCard } from "@/components/member/PaymentDueCard";
 
-export default function MemberPaymentsPage() {
+export default function MemberPaymentsSummaryPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Payments</h1>
-        <p className="text-gray-600">Track your payment history and due dates</p>
+        <h1 className="text-2xl font-bold text-gray-900">Payments Summary</h1>
+        <p className="text-gray-600">
+          Track your payment history and due dates
+        </p>
       </div>
-      
+
       <PaymentDueCard />
-      
+
       <div className="bg-white p-6 rounded-lg shadow">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="text-center">
@@ -27,7 +29,7 @@ export default function MemberPaymentsPage() {
           </div>
         </div>
       </div>
-      
+
       <PaymentHistory />
     </div>
   );

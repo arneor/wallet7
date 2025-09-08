@@ -65,8 +65,8 @@ export default function MemberLayout({
       ),
     },
     {
-      name: "Payments",
-      href: "/member/payments",
+      name: "Payments Summary",
+      href: "/member/payments_summary",
       icon: (
         <svg
           className="w-5 h-5"
