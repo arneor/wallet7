@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -9,6 +9,37 @@ const nextConfig: NextConfig = {
   typescript: {
     // Also ignore TypeScript errors during build if needed
     ignoreBuildErrors: true,
+  },
+  // PWA Configuration
+  async headers() {
+    return [
+      {
+        source: '/sw.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, must-revalidate',
+          },
+          {
+            key: 'Service-Worker-Allowed',
+            value: '/',
+          },
+        ],
+      },
+      {
+        source: '/manifest.json',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
+  // Enable experimental features for PWA
+  experimental: {
+    // optimizeCss: true, // Disabled due to critters dependency issue
   },
 };
 
