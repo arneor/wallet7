@@ -137,7 +137,7 @@ export default function MemberLayout({
               </div>
               <div>
                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  ROSCA
+                  WALLET7
                 </span>
                 <div className="text-xs text-gray-500">Member Portal</div>
               </div>

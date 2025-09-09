@@ -1,4 +1,4 @@
-/* Animation utilities for ROSCA app */
+/* Animation utilities for WALLET7 app */
 
 /* Page transitions */
 .page-enter {
@@ -9,7 +9,9 @@
 .page-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition:
+    opacity 300ms ease-in-out,
+    transform 300ms ease-in-out;
 }
 
 .page-exit {
@@ -20,17 +22,23 @@
 .page-exit-active {
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition:
+    opacity 300ms ease-in-out,
+    transform 300ms ease-in-out;
 }
 
 /* Card animations */
 .card-hover {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Button animations */
@@ -50,7 +58,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -59,7 +68,8 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
@@ -199,8 +209,18 @@
   animation: slideIn 0.5s ease-out forwards;
 }
 
-.stagger-item:nth-child(1) { animation-delay: 0.1s; }
-.stagger-item:nth-child(2) { animation-delay: 0.2s; }
-.stagger-item:nth-child(3) { animation-delay: 0.3s; }
-.stagger-item:nth-child(4) { animation-delay: 0.4s; }
-.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stagger-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.stagger-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.stagger-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.stagger-item:nth-child(5) {
+  animation-delay: 0.5s;
+}

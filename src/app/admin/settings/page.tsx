@@ -312,7 +312,7 @@ export default function AdminSettingsPage() {
 
   // Settings State
   const [generalSettings, setGeneralSettings] = useState<GeneralSettings>({
-    organizationName: "ROSCA Management Hub",
+    organizationName: "WALLET7 Management Hub",
     currency: "INR",
     defaultContributionAmount: "5000",
     timezone: "Asia/Kolkata",
@@ -455,7 +455,7 @@ export default function AdminSettingsPage() {
       confirm("Are you sure you want to reset all settings to default values?")
     ) {
       setGeneralSettings({
-        organizationName: "ROSCA Management Hub",
+        organizationName: "WALLET7 Management Hub",
         currency: "INR",
         defaultContributionAmount: "5000",
         timezone: "Asia/Kolkata",
@@ -491,10 +491,11 @@ export default function AdminSettingsPage() {
       >
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-            ⚙️ ROSCA Management Settings
+            ⚙️ WALLET7 Management Settings
           </h1>
           <p className="text-gray-600">
-            Configure your ROSCA group management platform preferences and rules
+            Configure your WALLET7 group management platform preferences and
+            rules
           </p>
           <div className="flex items-center space-x-3 mt-2">
             <span className="inline-flex items-center space-x-2 px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full border border-blue-200">
@@ -570,7 +571,7 @@ export default function AdminSettingsPage() {
                 General Settings
               </h2>
               <p className="text-gray-600 mb-6">
-                Basic configuration for your ROSCA management platform
+                Basic configuration for your WALLET7 management platform
               </p>
             </div>
 
@@ -664,7 +665,7 @@ export default function AdminSettingsPage() {
                     handleGeneralChange("organizationName", e.target.value)
                   }
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Your ROSCA organization name"
+                  placeholder="Your WALLET7 organization name"
                 />
               </div>
 
@@ -735,7 +736,7 @@ export default function AdminSettingsPage() {
                 Group Management Settings
               </h2>
               <p className="text-gray-600 mb-6">
-                Configure default rules and policies for ROSCA groups
+                Configure default rules and policies for WALLET7 groups
               </p>
             </div>
 
@@ -1532,14 +1533,14 @@ export default function AdminSettingsPage() {
                 <div className="text-blue-600 text-2xl mr-4">📋</div>
                 <div>
                   <h4 className="text-blue-900 font-medium">
-                    ROSCA Management Compliance
+                    WALLET7 Management Compliance
                   </h4>
                   <p className="text-blue-800 text-sm mt-2">
                     This management platform helps you maintain proper records
-                    and documentation for your ROSCA groups. It does not process
-                    financial transactions but provides tools for tracking
-                    contributions, managing group activities, and maintaining
-                    compliance with local regulations.
+                    and documentation for your WALLET7 groups. It does not
+                    process financial transactions but provides tools for
+                    tracking contributions, managing group activities, and
+                    maintaining compliance with local regulations.
                   </p>
                   <p className="text-blue-700 text-xs mt-3 italic">
                     Consult with legal experts for specific compliance

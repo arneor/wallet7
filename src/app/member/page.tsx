@@ -117,7 +117,7 @@ export default function MemberDashboard() {
                 Welcome back, John! 👋
               </h1>
               <p className="text-blue-100 text-sm sm:text-base lg:text-lg">
-                You&apos;re part of {groups.length} active ROSCA groups with ₹
+                You&apos;re part of {groups.length} active WALLET7 groups with ₹
                 {groups
                   .reduce((total, group) => total + group.contributionAmount, 0)
                   .toLocaleString()}{" "}

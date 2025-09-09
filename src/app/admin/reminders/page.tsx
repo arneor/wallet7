@@ -72,7 +72,7 @@ const mockTemplates: ReminderTemplate[] = [
     name: "Payment Due Reminder",
     type: "Payment Due",
     content:
-      "Dear {memberName}, your ROSCA contribution of ₹{amount} is due on {dueDate}. Please make your payment to keep the group running smoothly. Group: {groupName}",
+      "Dear {memberName}, your WALLET7 contribution of ₹{amount} is due on {dueDate}. Please make your payment to keep the group running smoothly. Group: {groupName}",
     variables: ["memberName", "amount", "dueDate", "groupName"],
   },
   {
@@ -114,7 +114,7 @@ const mockReminders: Reminder[] = [
     dueDate: "2025-09-12",
     status: "Scheduled",
     template:
-      "Dear member, your ROSCA contribution is due soon. Please make your payment on time.",
+      "Dear member, your WALLET7 contribution is due soon. Please make your payment on time.",
     isRecurring: true,
     recurringType: "Monthly",
     createdAt: "2025-09-08T10:30:00",
@@ -333,8 +333,8 @@ export default function AdminRemindersPage() {
             📢 Member Reminders & Communications
           </h1>
           <p className="text-gray-600">
-            Schedule, manage, and track all member communications for your ROSCA
-            groups
+            Schedule, manage, and track all member communications for your
+            WALLET7 groups
           </p>
         </div>
         <div className="flex space-x-3">
@@ -640,7 +640,7 @@ export default function AdminRemindersPage() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ROSCA Group *
+                    WALLET7 Group *
                   </label>
                   <select
                     value={newReminder.groupId}

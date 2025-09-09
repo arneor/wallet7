@@ -614,7 +614,7 @@ export default function MemberProfilePage() {
                           Public - Anyone can see your profile
                         </option>
                         <option value="members">
-                          Members Only - Only ROSCA members can see
+                          Members Only - Only WALLET7 members can see
                         </option>
                         <option value="private">
                           Private - Only you can see your profile

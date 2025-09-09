@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 
 // GET /api/groups - Get all groups
 export async function GET(request: NextRequest) {
@@ -6,35 +6,35 @@ export async function GET(request: NextRequest) {
     // Mock data - replace with actual database queries
     const groups = [
       {
-        id: '1',
-        name: 'Family Savings Circle',
-        description: 'Monthly family savings group',
+        id: "1",
+        name: "Family Savings Circle",
+        description: "Monthly family savings group",
         contributionAmount: 500,
-        frequency: 'monthly',
+        frequency: "monthly",
         maxMembers: 10,
         currentMembers: 8,
-        status: 'active',
-        startDate: '2024-01-01',
-        createdAt: '2024-01-01T00:00:00Z'
+        status: "active",
+        startDate: "2024-01-01",
+        createdAt: "2024-01-01T00:00:00Z",
       },
       {
-        id: '2',
-        name: 'Business Investment Club',
-        description: 'Investment focused ROSCA',
+        id: "2",
+        name: "Business Investment Club",
+        description: "Investment focused WALLET7",
         contributionAmount: 1000,
-        frequency: 'monthly',
+        frequency: "monthly",
         maxMembers: 12,
         currentMembers: 10,
-        status: 'active',
-        startDate: '2024-02-01',
-        createdAt: '2024-02-01T00:00:00Z'
-      }
+        status: "active",
+        startDate: "2024-02-01",
+        createdAt: "2024-02-01T00:00:00Z",
+      },
     ];
 
     return NextResponse.json({ groups });
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to fetch groups' },
+      { error: "Failed to fetch groups" },
       { status: 500 }
     );
   }
@@ -44,12 +44,19 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, description, contributionAmount, frequency, maxMembers, startDate } = body;
+    const {
+      name,
+      description,
+      contributionAmount,
+      frequency,
+      maxMembers,
+      startDate,
+    } = body;
 
     // Validate required fields
     if (!name || !contributionAmount || !maxMembers || !startDate) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: "Missing required fields" },
         { status: 400 }
       );
     }
@@ -58,20 +65,20 @@ export async function POST(request: NextRequest) {
     const newGroup = {
       id: Date.now().toString(),
       name,
-      description: description || '',
+      description: description || "",
       contributionAmount: Number(contributionAmount),
-      frequency: frequency || 'monthly',
+      frequency: frequency || "monthly",
       maxMembers: Number(maxMembers),
       currentMembers: 0,
-      status: 'active',
+      status: "active",
       startDate,
-      createdAt: new Date().toISOString()
+      createdAt: new Date().toISOString(),
     };
 
     return NextResponse.json({ group: newGroup }, { status: 201 });
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to create group' },
+      { error: "Failed to create group" },
       { status: 500 }
     );
   }

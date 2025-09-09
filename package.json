@@ -1,8 +1,8 @@
 {
-  "name": "rosca-chit-fund-app",
+  "name": "wallet7",
   "version": "1.0.0",
   "private": true,
-  "description": "A comprehensive ROSCA (Rotating Savings and Credit Association) management application",
+  "description": "A comprehensive WALLET7 (Rotating Savings and Credit Association) management application",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -40,6 +40,7 @@
     "typescript": "^5"
   },
   "keywords": [
+    "wallet7",
     "rosca",
     "chit-fund",
     "savings",
@@ -49,6 +50,6 @@
     "typescript",
     "tailwindcss"
   ],
-  "author": "ROSCA Development Team",
+  "author": "WALLET7 Development Team",
   "license": "MIT"
 }

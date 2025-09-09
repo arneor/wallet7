@@ -90,9 +90,9 @@ export default function AdminSupportPage() {
   const faqs: FAQ[] = [
     {
       id: "faq-1",
-      question: "How do I create a new ROSCA group?",
+      question: "How do I create a new WALLET7 group?",
       answer:
-        "To create a new ROSCA group: 1) Go to Groups > Create New Group 2) Fill in group details like name, contribution amount, and duration 3) Set group rules and policies 4) Invite members via email or share group code 5) Activate the group once you have enough members.",
+        "To create a new WALLET7 group: 1) Go to Groups > Create New Group 2) Fill in group details like name, contribution amount, and duration 3) Set group rules and policies 4) Invite members via email or share group code 5) Activate the group once you have enough members.",
       category: "Group Management",
       helpful: 45,
       views: 120,
@@ -155,8 +155,8 @@ export default function AdminSupportPage() {
 
   const resources = [
     {
-      title: "ROSCA Management Guide",
-      description: "Complete guide on managing ROSCA groups effectively",
+      title: "WALLET7 Management Guide",
+      description: "Complete guide on managing WALLET7 groups effectively",
       type: "PDF",
       size: "2.5 MB",
       downloadUrl: "#",
@@ -447,7 +447,7 @@ export default function AdminSupportPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-gray-600 mb-6">
-                Common questions and answers for ROSCA management
+                Common questions and answers for WALLET7 management
               </p>
             </div>
 
@@ -589,7 +589,9 @@ export default function AdminSupportPage() {
                 <div className="text-center">
                   <div className="text-2xl mb-2">📊</div>
                   <h4 className="font-medium text-gray-900">Best Practices</h4>
-                  <p className="text-gray-600 text-sm">ROSCA management tips</p>
+                  <p className="text-gray-600 text-sm">
+                    WALLET7 management tips
+                  </p>
                 </div>
               </div>
             </div>

@@ -54,7 +54,7 @@ function Navigation() {
               <span className="text-white font-bold text-sm">R</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              ROSCA
+              WALLET7
             </span>
           </div>
 
@@ -120,21 +120,21 @@ function HeroSection() {
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-50 border border-green-200">
                 <span className="text-green-600 text-sm font-medium">
-                  ✅ Live Platform - Start Your ROSCA Today
+                  ✅ Live Platform - Start Your WALLET7 Today
                 </span>
               </div>
 
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Digital{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  ROSCA
+                  WALLET7
                 </span>{" "}
                 Management Platform
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                 Organize and manage Rotating Savings & Credit Associations
-                (ROSCAs) with complete transparency and digital tracking.
+                (Wallet7s) with complete transparency and digital tracking.
                 Perfect for community savings groups.
               </p>
 
@@ -190,7 +190,7 @@ function HeroSection() {
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
-                <strong>💡 Platform Ready:</strong> Create your ROSCA group in
+                <strong>💡 Platform Ready:</strong> Create your Wallet7 group in
                 minutes. Invite members, track contributions, and manage payouts
                 digitally.
               </p>
@@ -265,7 +265,7 @@ function FeaturesSection() {
       icon: "📊",
       title: "Group Management",
       description:
-        "Create and manage ROSCA groups with customizable rules, member tracking, and automated scheduling.",
+        "Create and manage Wallet7 groups with customizable rules, member tracking, and automated scheduling.",
       gradient: "from-blue-500 to-blue-600",
     },
     {
@@ -317,7 +317,7 @@ function FeaturesSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Everything you need for{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              successful ROSCAs
+              successful Wallet7s
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -361,7 +361,7 @@ function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      title: "Create Your ROSCA",
+      title: "Create Your Wallet7",
       description:
         "Set up a new savings group with custom terms, contribution amounts, payout schedule, and member limits.",
       icon: "👥",
@@ -370,7 +370,7 @@ function HowItWorksSection() {
       step: "02",
       title: "Invite Members",
       description:
-        "Add trusted friends, family, or community members to your ROSCA group using invite codes or approval system.",
+        "Add trusted friends, family, or community members to your Wallet7 group using invite codes or approval system.",
       icon: "📧",
     },
     {
@@ -404,7 +404,7 @@ function HowItWorksSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             How{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              ROSCA
+              Wallet7
             </span>{" "}
             Works
           </h2>
@@ -451,7 +451,7 @@ function HowItWorksSection() {
             <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
               <div className="text-center mb-6">
                 <h4 className="text-2xl font-bold text-gray-900 mb-2">
-                  Example ROSCA Group
+                  Example WALLET7 Group
                 </h4>
                 <p className="text-gray-600">
                   12 Members • ₹5,000/month • 12 cycles
@@ -513,13 +513,13 @@ function AdminFeaturesSection() {
       icon: "📈",
       title: "Dashboard Overview",
       description:
-        "Get a complete view of all your ROSCA groups, member activities, and upcoming payouts.",
+        "Get a complete view of all your WALLET7 groups, member activities, and upcoming payouts.",
     },
     {
       icon: "👥",
       title: "Member Management",
       description:
-        "Add, approve, and manage members across multiple ROSCA groups with detailed member profiles.",
+        "Add, approve, and manage members across multiple WALLET7 groups with detailed member profiles.",
     },
     {
       icon: "📅",
@@ -563,7 +563,7 @@ function AdminFeaturesSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Powerful tools to create, manage, and track multiple ROSCA groups
+            Powerful tools to create, manage, and track multiple WALLET7 groups
             with ease and transparency.
           </p>
         </motion.div>
@@ -603,7 +603,7 @@ function MemberFeaturesSection() {
       icon: "🏠",
       title: "Personal Dashboard",
       description:
-        "Track all your ROSCA participations, payment due dates, and payout schedules in one place.",
+        "Track all your WALLET7 participations, payment due dates, and payout schedules in one place.",
     },
     {
       icon: "📱",
@@ -726,7 +726,7 @@ function IndiaFeaturesSection() {
       icon: "📚",
       title: "Educational Resources",
       description:
-        "In-app guides, FAQs, and tutorials about ROSCA operations and best practices.",
+        "In-app guides, FAQs, and tutorials about WALLET7 operations and best practices.",
     },
   ];
 
@@ -793,11 +793,11 @@ function CTASection() {
           <div className="relative z-10">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               Ready to start your{" "}
-              <span className="text-yellow-400">ROSCA journey</span>?
+              <span className="text-yellow-400">WALLET7 journey</span>?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Join thousands who are already organizing their community savings
-              groups with our platform. Create your first ROSCA in minutes.
+              groups with our platform. Create your first WALLET7 in minutes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -877,7 +877,7 @@ function CTASection() {
             {/* Platform Notice */}
             <div className="mt-8 p-4 bg-blue-800/30 rounded-lg">
               <p className="text-sm text-blue-100">
-                <strong>Platform Notice:</strong> ROSCA is a community
+                <strong>Platform Notice:</strong> WALLET7 is a community
                 management platform. All financial transactions occur directly
                 between trusted group members.
               </p>
@@ -908,7 +908,7 @@ function Footer() {
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">R</span>
               </div>
-              <span className="text-xl font-bold">ROSCA</span>
+              <span className="text-xl font-bold">WALLET7</span>
             </div>
             <p className="text-gray-400">
               Digital platform for organizing and managing Rotating Savings &
@@ -979,7 +979,7 @@ function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 ROSCA. All rights reserved.
+              © 2025 WALLET7. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm">
               <span className="text-gray-400">🇮🇳 Made for India</span>
@@ -991,7 +991,7 @@ function Footer() {
           {/* Platform Disclaimer */}
           <div className="mt-6 p-4 bg-gray-800 rounded-lg">
             <p className="text-xs text-gray-400 text-center">
-              <strong>Platform Notice:</strong> ROSCA is a digital management
+              <strong>Platform Notice:</strong> WALLET7 is a digital management
               platform for community savings groups. We provide organizational
               tools while all financial transactions occur directly between
               trusted group members. This platform does not process, hold, or

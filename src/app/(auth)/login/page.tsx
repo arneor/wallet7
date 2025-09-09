@@ -78,7 +78,7 @@ export default function LoginPage() {
                 <span className="text-white font-bold text-xl">R</span>
               </div>
               <span className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                ROSCA
+                WALLET7
               </span>
             </Link>
 
@@ -90,7 +90,7 @@ export default function LoginPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Continue managing your ROSCA groups and track your savings
+                Continue managing your WALLET7 groups and track your savings
                 journey with our comprehensive platform.
               </p>
             </div>
@@ -162,21 +162,21 @@ export default function LoginPage() {
                 <span className="text-white font-bold text-lg">R</span>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                ROSCA
+                WALLET7
               </span>
             </Link>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
               Welcome Back
             </h2>
             <p className="text-gray-600">
-              Sign in to continue your ROSCA journey
+              Sign in to continue your WALLET7 journey
             </p>
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl border border-white/20 p-8">
             <div className="hidden lg:block mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Sign In</h2>
-              <p className="text-gray-600">Access your ROSCA dashboard</p>
+              <p className="text-gray-600">Access your WALLET7 dashboard</p>
             </div>
 
             {/* User Type Selection */}
@@ -399,7 +399,7 @@ export default function LoginPage() {
             {/* Sign Up Link */}
             <div className="mt-6 text-center">
               <p className="text-gray-600">
-                New to ROSCA?{" "}
+                New to WALLET7?{" "}
                 <Link
                   href="/register"
                   className="text-blue-600 hover:text-blue-700 font-medium hover:underline"

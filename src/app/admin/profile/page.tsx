@@ -51,7 +51,7 @@ export default function AdminProfilePage() {
     id: "admin-001",
     firstName: "Rajesh",
     lastName: "Kumar",
-    email: "rajesh.admin@roscahub.com",
+    email: "rajesh.admin@wallet7hub.com",
     phone: "+91-9876543210",
     avatar: "/api/placeholder/150/150",
     role: "Super Admin",
@@ -144,7 +144,7 @@ export default function AdminProfilePage() {
               {profileData.firstName} {profileData.lastName}
             </h1>
             <p className="text-gray-600">
-              {profileData.role} • ROSCA Management Platform
+              {profileData.role} • wallet7 Management Platform
             </p>
             <div className="flex items-center space-x-3 mt-1">
               <span className="inline-flex items-center space-x-1 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">

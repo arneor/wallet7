@@ -110,7 +110,7 @@ export default function RegisterPage() {
                 <span className="text-white font-bold text-xl">R</span>
               </div>
               <span className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                ROSCA
+                WALLET7
               </span>
             </Link>
 
@@ -123,7 +123,7 @@ export default function RegisterPage() {
                 savings revolution
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Start your ROSCA journey today. Create or join savings groups,
+                Start your WALLET7 journey today. Create or join savings groups,
                 track contributions, and build financial discipline with your
                 community.
               </p>
@@ -220,13 +220,13 @@ export default function RegisterPage() {
                 <span className="text-white font-bold text-lg">R</span>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                ROSCA
+                WALLET7
               </span>
             </Link>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
               Create Account
             </h2>
-            <p className="text-gray-600">Join the ROSCA community</p>
+            <p className="text-gray-600">Join the WALLET7 community</p>
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl border border-white/20 p-8">
@@ -234,7 +234,7 @@ export default function RegisterPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
                 Create Account
               </h2>
-              <p className="text-gray-600">Start your ROSCA journey</p>
+              <p className="text-gray-600">Start your WALLET7 journey</p>
             </div>
 
             {/* Progress Steps */}
@@ -396,7 +396,7 @@ export default function RegisterPage() {
                           <div>
                             <div className="font-medium">Join as Member</div>
                             <div className="text-sm opacity-75">
-                              Participate in existing ROSCA groups
+                              Participate in existing WALLET7 groups
                             </div>
                           </div>
                         </div>
@@ -417,7 +417,7 @@ export default function RegisterPage() {
                               Start as Organizer
                             </div>
                             <div className="text-sm opacity-75">
-                              Create and manage ROSCA groups
+                              Create and manage WALLET7 groups
                             </div>
                           </div>
                         </div>

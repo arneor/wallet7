@@ -49,14 +49,14 @@ interface SummaryStats {
   collectionRate: string;
 }
 
-interface RoscaData {
+interface Wallet7Data {
   groups: Group[];
   transactions: Transaction[];
   members: string[];
 }
 
-// Mock ROSCA data with proper typing
-const mockRoscaData: RoscaData = {
+// Mock Wallet7 data with proper typing
+const mockWallet7Data: Wallet7Data = {
   groups: [
     {
       id: "1",
@@ -213,7 +213,7 @@ const mockRoscaData: RoscaData = {
   ],
 };
 
-export default function RoscaReportsPage() {
+export default function Wallet7ReportsPage() {
   // Filter states with proper typing
   const [filters, setFilters] = useState<FilterState>({
     dateRange: "all",
@@ -234,7 +234,7 @@ export default function RoscaReportsPage() {
 
   // Filter transactions based on selected filters
   const filteredTransactions = useMemo((): Transaction[] => {
-    let filtered = [...mockRoscaData.transactions];
+    let filtered = [...mockWallet7Data.transactions];
 
     // Date range filter
     if (filters.dateRange !== "all") {
@@ -380,7 +380,7 @@ export default function RoscaReportsPage() {
   };
 
   const handleExport = (): void => {
-    console.log(`Exporting ROSCA report in ${exportFormat} format`);
+    console.log(`Exporting Wallet7 report in ${exportFormat} format`);
     // Implementation for export functionality
   };
 
@@ -394,7 +394,7 @@ export default function RoscaReportsPage() {
       >
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-            ROSCA Reports & Ledger
+            Wallet7 Reports & Ledger
           </h1>
           <p className="text-gray-600">
             Comprehensive transaction tracking and member activity reports
@@ -495,7 +495,7 @@ export default function RoscaReportsPage() {
           {/* Group Filter */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              ROSCA Group
+              Wallet7 Group
             </label>
             <select
               value={filters.groupId}
@@ -503,7 +503,7 @@ export default function RoscaReportsPage() {
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="all">All Groups</option>
-              {mockRoscaData.groups.map((group) => (
+              {mockWallet7Data.groups.map((group) => (
                 <option key={group.id} value={group.id}>
                   {group.name}
                 </option>
@@ -522,7 +522,7 @@ export default function RoscaReportsPage() {
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="all">All Members</option>
-              {mockRoscaData.members.map((member) => (
+              {mockWallet7Data.members.map((member) => (
                 <option key={member} value={member}>
                   {member}
                 </option>
@@ -899,10 +899,10 @@ export default function RoscaReportsPage() {
             {/* Analytics Header */}
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                📊 ROSCA Analytics Dashboard
+                📊 Wallet7 Analytics Dashboard
               </h2>
               <p className="text-gray-600">
-                Visual insights into your ROSCA groups performance and trends
+                Visual insights into your Wallet7 groups performance and trends
               </p>
             </div>
 
@@ -945,7 +945,7 @@ export default function RoscaReportsPage() {
                       Active Members
                     </p>
                     <p className="text-3xl font-bold text-purple-800">
-                      {mockRoscaData.members.length}
+                      {mockWallet7Data.members.length}
                     </p>
                     <p className="text-xs text-purple-600">across all groups</p>
                   </div>
@@ -1093,7 +1093,7 @@ export default function RoscaReportsPage() {
                 </h3>
 
                 <div className="space-y-4">
-                  {mockRoscaData.groups.map((group, index) => {
+                  {mockWallet7Data.groups.map((group, index) => {
                     const performance = [95, 100, 88][index]; // Mock performance data
                     return (
                       <div key={group.id} className="space-y-2">
@@ -1298,10 +1298,10 @@ export default function RoscaReportsPage() {
                 </div>
               </div>
 
-              {/* ROSCA Health Score */}
+              {/* Wallet7 Health Score */}
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
-                  🏥 ROSCA Health
+                  🏥 Wallet7 Health
                 </h3>
 
                 <div className="text-center mb-6">

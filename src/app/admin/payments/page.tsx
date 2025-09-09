@@ -36,7 +36,7 @@ interface FilterState {
   member: string;
 }
 
-// Mock ROSCA Payment Data
+// Mock WALLET7 Payment Data
 const mockPaymentData: Payment[] = [
   {
     id: 1,
@@ -454,7 +454,7 @@ export default function AdminPaymentsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              ROSCA Group
+              WALLET7 Group
             </label>
             <select
               value={filters.groupId}
@@ -953,7 +953,7 @@ export default function AdminPaymentsPage() {
                   <textarea
                     rows={4}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    defaultValue="Dear member, this is a friendly reminder that your ROSCA contribution is due. Please make your payment at your earliest convenience. Thank you!"
+                    defaultValue="Dear member, this is a friendly reminder that your WALLET7 contribution is due. Please make your payment at your earliest convenience. Thank you!"
                   />
                 </div>
 
