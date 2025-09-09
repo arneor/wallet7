@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { PaymentDueCard } from "@/components/member/PaymentDueCard";
+import { ContributionDueCard } from "@/components/member/ContributionDueCard";
 import { PayoutTurnCard } from "@/components/member/PayoutTurnCard";
 import { GroupOverview } from "@/components/member/GroupOverview";
 import { QuickStats } from "@/components/member/QuickStats";
@@ -20,7 +20,7 @@ export default function MemberDashboard() {
   const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
   const [showGroupDetails, setShowGroupDetails] = useState<boolean>(false);
 
-  // Mock group data for dashboard - same as groups page
+  // Updated mock group data with coordinator information
   const groups: Group[] = [
     {
       id: "1",
@@ -31,12 +31,14 @@ export default function MemberDashboard() {
       totalMembers: 10,
       currentRound: 6,
       totalRounds: 10,
-      nextPaymentDate: "2024-02-15",
+      nextPaymentDate: "2025-09-15", // Updated to current year
       myPosition: 8,
       status: "active",
       avatar: "👨‍👩‍👧‍👦",
       memberPositions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       completedPositions: [1, 2, 3, 4, 5, 6],
+      coordinatorName: "Rajesh Kumar",
+      coordinatorPhone: "+91 98765 43210",
     },
     {
       id: "2",
@@ -47,12 +49,14 @@ export default function MemberDashboard() {
       totalMembers: 8,
       currentRound: 3,
       totalRounds: 8,
-      nextPaymentDate: "2024-02-20",
+      nextPaymentDate: "2025-09-20", // Updated to current year
       myPosition: 5,
       status: "active",
       avatar: "💼",
       memberPositions: [1, 2, 3, 4, 5, 6, 7, 8],
       completedPositions: [1, 2, 3],
+      coordinatorName: "Priya Sharma",
+      coordinatorPhone: "+91 98765 43211",
     },
     {
       id: "3",
@@ -63,12 +67,14 @@ export default function MemberDashboard() {
       totalMembers: 6,
       currentRound: 2,
       totalRounds: 6,
-      nextPaymentDate: "2024-03-01",
+      nextPaymentDate: "2025-12-01", // Updated to current year
       myPosition: 4,
       status: "active",
       avatar: "💻",
       memberPositions: [1, 2, 3, 4, 5, 6],
       completedPositions: [1, 2],
+      coordinatorName: "Amit Singh",
+      coordinatorPhone: "+91 98765 43212",
     },
   ];
 
@@ -111,8 +117,11 @@ export default function MemberDashboard() {
                 Welcome back, John! 👋
               </h1>
               <p className="text-blue-100 text-sm sm:text-base lg:text-lg">
-                You&apos;re part of 3 active ROSCA groups with ₹15,000 in total
-                contributions
+                You&apos;re part of {groups.length} active ROSCA groups with ₹
+                {groups
+                  .reduce((total, group) => total + group.contributionAmount, 0)
+                  .toLocaleString()}{" "}
+                in total contributions
               </p>
             </div>
 
@@ -153,10 +162,10 @@ export default function MemberDashboard() {
         {/* Quick Stats - Mobile Responsive Grid */}
         <QuickStats />
 
-        {/* Priority Cards - Stack on Mobile */}
+        {/* Priority Cards - Stack on Mobile - Now properly passing groups data */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-          <PaymentDueCard />
-          <PayoutTurnCard />
+          <ContributionDueCard groups={groups} />
+          <PayoutTurnCard groups={groups} />
         </div>
 
         {/* Main Content - Mobile First Layout */}
@@ -181,7 +190,7 @@ export default function MemberDashboard() {
               </div>
             </div>
 
-            {/* FIXED: Pass proper group data and showFullDetails=false for button visibility */}
+            {/* Groups List */}
             <div className="space-y-4">
               {groups.map((group: Group, index: number) => (
                 <motion.div

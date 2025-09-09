@@ -17,6 +17,9 @@ export interface Group {
   adminName?: string;
   createdDate?: string;
   rules?: string[];
+  // Added coordinator information
+  coordinatorName?: string;
+  coordinatorPhone?: string;
 }
 
 export interface GroupOverviewProps {
@@ -24,4 +27,13 @@ export interface GroupOverviewProps {
   showFullDetails?: boolean;
   showMemberOrder?: boolean;
   onViewDetails?: () => void;
+}
+
+// New interfaces for card props
+export interface ContributionDueCardProps {
+  groups: Group[];
+}
+
+export interface PayoutTurnCardProps {
+  groups: Group[];
 }
