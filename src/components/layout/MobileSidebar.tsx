@@ -270,7 +270,7 @@ export function MobileSidebar({ open, setOpen }: MobileSidebarProps) {
                 </svg>
               </div>
               <h1 className="text-xl font-bold text-gray-900">
-                Chit Fund Admin
+                Wallet7 Admin
               </h1>
             </div>
           </div>

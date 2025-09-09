@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ROSCA Chit Fund App",
-  description: "Manage your ROSCA chit fund groups with ease",
+  title: "Wallet7 App",
+  description: "Manage your Wallet7 groups with ease",
 };
 
 export default function RootLayout({

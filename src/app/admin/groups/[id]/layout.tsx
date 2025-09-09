@@ -136,7 +136,7 @@ export default function GroupLayout({
         <div className="mt-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-700">
-              Chit Fund Progress
+              Wallet7 Progress
             </span>
             <span className="text-sm text-gray-500">
               {progress.toFixed(1)}% Complete

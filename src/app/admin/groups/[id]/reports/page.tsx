@@ -183,8 +183,8 @@ export default function GroupReportsPage({
               Compliance Status
             </h3>
             <p className="text-green-700 mt-1">
-              This chit fund group is fully compliant with the Chit Funds Act,
-              1982. All records are maintained digitally and available for
+              This Wallet7 group is fully compliant with applicable
+              regulations. All records are maintained digitally and available for
               audit.
             </p>
             <div className="mt-3 flex space-x-3">

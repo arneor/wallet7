@@ -46,7 +46,7 @@ export default function CreateGroupPage() {
       setCurrentStep(currentStep + 1);
     } else {
       // Handle group creation logic here
-      console.log("Creating chit fund group:", formData);
+      console.log("Creating Wallet7 group:", formData);
       router.push("/admin/groups");
     }
   };
@@ -100,10 +100,10 @@ export default function CreateGroupPage() {
         className="mb-8"
       >
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-          Create New Chit Fund Group
+          Create New Wallet7 Group
         </h1>
         <p className="text-gray-600 mt-2">
-          Set up a new chit fund group with customizable rules and settings
+          Set up a new Wallet7 group with customizable rules and settings
         </p>
       </motion.div>
 
@@ -157,7 +157,7 @@ export default function CreateGroupPage() {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Chit Fund Group Name <span className="text-red-500">*</span>
+                  Wallet7 Group Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -184,7 +184,7 @@ export default function CreateGroupPage() {
                   value={formData.description}
                   onChange={handleChange}
                   rows={3}
-                  placeholder="Describe the purpose and goals of this chit fund group"
+                  placeholder="Describe the purpose and goals of this Wallet7 group"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -437,9 +437,9 @@ export default function CreateGroupPage() {
                   📋 Compliance Note
                 </h3>
                 <p className="text-sm text-yellow-800">
-                  This chit fund group will be created in accordance with the
-                  Chit Funds Act, 1982. All members will need to digitally sign
-                  the chit fund agreement before participating.
+                  This Wallet7 group will be created in accordance with the
+                  applicable regulations. All members will need to digitally sign
+                  the Wallet7 agreement before participating.
                 </p>
               </div>
             </motion.div>
@@ -472,7 +472,7 @@ export default function CreateGroupPage() {
               type="submit"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
-              {currentStep === 3 ? "Create Chit Fund Group" : "Next Step"}
+              {currentStep === 3 ? "Create Wallet7 Group" : "Next Step"}
             </button>
           </div>
         </div>

@@ -9,7 +9,7 @@ export function QuickActions() {
   const actions = [
     {
       title: "Create New Group",
-      description: "Start a new chit fund group",
+      description: "Start a new Wallet7 group",
       href: "/admin/groups/create",
       icon: (
         <svg

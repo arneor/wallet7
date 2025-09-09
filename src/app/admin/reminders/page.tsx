@@ -519,7 +519,7 @@ export default function AdminRemindersPage() {
                         Message Preview:
                       </p>
                       <p className="text-sm text-gray-600 italic">
-                        "{reminder.template}"
+                        &ldquo;{reminder.template}&rdquo;
                       </p>
                     </div>
 

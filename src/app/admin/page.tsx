@@ -74,7 +74,7 @@ export default function AdminDashboard() {
             Group Conductor Dashboard
           </h1>
           <p className="text-sm sm:text-base text-gray-600">
-            Manage your chit fund groups and track member contributions
+            Manage your Wallet7 groups and track member contributions
           </p>
         </motion.div>
 

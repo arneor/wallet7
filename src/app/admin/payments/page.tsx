@@ -806,7 +806,7 @@ export default function AdminPaymentsPage() {
 
                   {payment.notes && (
                     <p className="text-xs text-gray-600 mb-3 italic">
-                      "{payment.notes}"
+                      &ldquo;{payment.notes}&rdquo;
                     </p>
                   )}
 

@@ -60,7 +60,7 @@ const mockGroups = [
   {
     id: "4",
     name: "Community Development Fund",
-    description: "Completed chit fund for community projects",
+    description: "Completed Wallet7 fund for community projects",
     contributionAmount: 3000,
     frequency: "monthly",
     totalMembers: 12,
@@ -109,7 +109,7 @@ export default function AdminGroupsPage() {
             My Groups
           </h1>
           <p className="text-gray-600">
-            Manage all your chit fund groups and track their progress
+            Manage all your Wallet7 groups and track their progress
           </p>
         </div>
         <Button onClick={() => router.push("/admin/groups/create-group")}>
@@ -226,7 +226,7 @@ export default function AdminGroupsPage() {
           <p className="mt-1 text-sm text-gray-500">
             {searchTerm || filterStatus !== "all"
               ? "Try adjusting your search or filter criteria."
-              : "Get started by creating your first chit fund group."}
+              : "Get started by creating your first Wallet7 group."}
           </p>
         </div>
       )}

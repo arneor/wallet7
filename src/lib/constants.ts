@@ -1,5 +1,5 @@
 export const APP_CONFIG = {
-  name: 'ROSCA Chit Fund',
+  name: 'Wallet7',
   description: 'Manage your rotating savings and credit associations',
   version: '1.0.0',
 } as const;
