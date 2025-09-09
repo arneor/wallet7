@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { AdminSidebar } from "@/components/layout/AdminSidebar";
 import { AdminHeader } from "@/components/layout/AdminHeader";
 import { MobileSidebar } from "@/components/layout/MobileSidebar";
+import { BottomNavigation } from "@/components/layout/BottomNavigation";
 
 export default function AdminLayout({
   children,
@@ -24,8 +25,11 @@ export default function AdminLayout({
       {/* Main content area */}
       <div className="lg:pl-64">
         <AdminHeader onMenuClick={() => setSidebarOpen(true)} />
-        <main className="p-4 sm:p-6 lg:p-8">{children}</main>
+        <main className="p-4 sm:p-6 lg:p-8 pb-20 lg:pb-8">{children}</main>
       </div>
+
+      {/* Mobile bottom navigation */}
+      <BottomNavigation />
     </div>
   );
 }

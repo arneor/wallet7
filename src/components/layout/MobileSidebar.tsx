@@ -6,143 +6,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-const navigation = [
-  {
-    name: "Dashboard",
-    href: "/admin",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "My Groups",
-    href: "/admin/groups",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Create Group",
-    href: "/admin/create-group",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Payout Schedule",
-    href: "/admin/payouts",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M8 7V3a4 4 0 118 0v4h-8zM4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Payment Records",
-    href: "/admin/payments",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Reminders",
-    href: "/admin/reminders",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Reports & Ledger",
-    href: "/admin/reports",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      </svg>
-    ),
-  },
-];
-
+// Only keeping secondary navigation since main navigation moved to bottom nav
 const secondaryNavigation = [
+  {
+    name: "Profile",
+    href: "/admin/profile",
+    icon: (
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+        />
+      </svg>
+    ),
+  },
   {
     name: "Settings",
     href: "/admin/settings",
@@ -222,27 +106,43 @@ export function MobileSidebar({ open, setOpen }: MobileSidebarProps) {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-gray-600 bg-opacity-75 z-40 lg:hidden"
+        className="fixed inset-0 backdrop-blur-md bg-black/30 z-40 lg:hidden"
         onClick={() => setOpen(false)}
+        aria-label="Close sidebar"
       />
 
       {/* Sidebar */}
       <div className="fixed inset-0 z-50 flex lg:hidden">
         <div
-          className={`relative flex w-full max-w-xs flex-1 flex-col bg-white pt-5 pb-4 transform transition-transform duration-300 ease-in-out ${
+          className={`relative flex w-full max-w-xs flex-1 flex-col bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          {/* Close button */}
-          <div className="absolute top-0 right-0 -mr-12 pt-2">
+          {/* Header with Logo and Close Button */}
+          <div className="flex items-center justify-between px-4 py-5 border-b border-gray-200 bg-white">
+            {/* Logo/Brand */}
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" />
+                </svg>
+              </div>
+              <h1 className="text-xl font-bold text-gray-900">Wallet7 Admin</h1>
+            </div>
+
+            {/* Close Button Inside Sidebar */}
             <button
               type="button"
-              className="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               onClick={() => setOpen(false)}
+              aria-label="Close menu"
             >
-              <span className="sr-only">Close sidebar</span>
               <svg
-                className="h-6 w-6 text-white"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -257,48 +157,33 @@ export function MobileSidebar({ open, setOpen }: MobileSidebarProps) {
             </button>
           </div>
 
-          {/* Logo/Brand */}
-          <div className="flex flex-shrink-0 items-center px-4 mb-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" />
-                </svg>
-              </div>
-              <h1 className="text-xl font-bold text-gray-900">
-                Wallet7 Admin
-              </h1>
-            </div>
-          </div>
+          {/* External Close Button (for outside tap area) */}
 
-          {/* Navigation */}
-          <div className="mt-5 h-0 flex-1 overflow-y-auto">
-            <nav className="px-2 space-y-1">
-              {/* Main Navigation */}
-              <div className="space-y-1">
-                {navigation.map((item) => {
-                  const isActive =
-                    pathname === item.href ||
-                    (item.href !== "/admin" && pathname.startsWith(item.href));
+          {/* Content Area */}
+          <div className="flex-1 flex flex-col justify-between">
+            {/* Secondary Navigation */}
+            <div className="px-4 mt-6">
+              <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">
+                Account & Settings
+              </h2>
+              <nav className="space-y-2">
+                {secondaryNavigation.map((item) => {
+                  const isActive = pathname === item.href;
                   return (
                     <Link
                       key={item.name}
                       href={item.href}
                       className={cn(
-                        "group flex items-center px-3 py-2 text-base font-medium rounded-lg transition-all duration-200",
+                        "group flex items-center px-3 py-3 text-base font-medium rounded-lg transition-all duration-200",
                         isActive
-                          ? "bg-blue-50 text-blue-700 border-r-2 border-blue-600"
+                          ? "bg-blue-50 text-blue-700 border-l-4 border-blue-600"
                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                       )}
                       onClick={() => setOpen(false)}
                     >
                       <div
                         className={cn(
-                          "mr-4 flex-shrink-0 transition-colors",
+                          "mr-3 flex-shrink-0 transition-colors",
                           isActive
                             ? "text-blue-600"
                             : "text-gray-400 group-hover:text-gray-500"
@@ -310,62 +195,46 @@ export function MobileSidebar({ open, setOpen }: MobileSidebarProps) {
                     </Link>
                   );
                 })}
-              </div>
+              </nav>
+            </div>
 
-              {/* Divider */}
-              <div className="border-t border-gray-200 my-4"></div>
-
-              {/* Secondary Navigation */}
-              <div className="space-y-1">
-                {secondaryNavigation.map((item) => {
-                  const isActive = pathname === item.href;
-                  return (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={cn(
-                        "group flex items-center px-3 py-2 text-base font-medium rounded-lg transition-all duration-200",
-                        isActive
-                          ? "bg-gray-100 text-gray-900"
-                          : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                      )}
-                      onClick={() => setOpen(false)}
-                    >
-                      <div
-                        className={cn(
-                          "mr-4 flex-shrink-0 transition-colors",
-                          isActive
-                            ? "text-gray-600"
-                            : "text-gray-400 group-hover:text-gray-500"
-                        )}
-                      >
-                        {item.icon}
-                      </div>
-                      {item.name}
-                    </Link>
-                  );
-                })}
-              </div>
-            </nav>
+            {/* Quick Actions */}
 
             {/* User info at bottom */}
-            <div className="px-4 py-3 border-t border-gray-200 mt-6">
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                  GC
+            <div className="px-4 py-4 border-t border-gray-200 bg-gray-50">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                    GC
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-700">
+                      Group Conductor
+                    </p>
+                    <p className="text-xs text-gray-500">Administrator</p>
+                  </div>
                 </div>
-                <div className="ml-3">
-                  <p className="text-sm font-medium text-gray-700">
-                    Group Conductor
-                  </p>
-                  <p className="text-xs text-gray-500">Administrator</p>
-                </div>
+                <button className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-200 rounded-lg transition-colors duration-200">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Dummy element to force sidebar to shrink to fit close icon */}
+        {/* Dummy element to maintain spacing */}
         <div className="w-14 flex-shrink-0" aria-hidden="true" />
       </div>
     </>

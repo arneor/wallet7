@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MemberBottomNavigation } from "@/components/layout/MemberBottomNavigation";
 
 export default function MemberLayout({
   children,
@@ -50,7 +51,7 @@ export default function MemberLayout({
       href: "/member/groups",
       icon: (
         <svg
-          className="w-5 h-5"
+          className="w-5 h-5 sm:w-6 sm:h-6"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -106,11 +107,6 @@ export default function MemberLayout({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Debug info - Remove in production
-      <div className="fixed top-0 right-0 z-[9999] bg-red-500 text-white p-2 text-xs">
-        Debug: {pathname} | Sidebar: {sidebarOpen ? "Open" : "Closed"}
-      </div> */}
-
       {/* Mobile Sidebar Overlay */}
       <AnimatePresence>
         {sidebarOpen && (
@@ -126,7 +122,9 @@ export default function MemberLayout({
 
       {/* Sidebar - Fixed positioning with higher z-index */}
       <div
-        className={`fixed inset-y-0 left-0 w-64 bg-white/90 backdrop-blur-xl border-r border-white/20 z-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`fixed inset-y-0 left-0 w-64 bg-white/90 backdrop-blur-xl border-r border-white/20 z-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
         <div className="flex flex-col h-full">
           {/* Logo */}
@@ -221,7 +219,7 @@ export default function MemberLayout({
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M15 17h5l-5 5v-5z"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
                 <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
@@ -229,7 +227,7 @@ export default function MemberLayout({
 
               {/* Quick Actions */}
               <div className="hidden md:flex items-center space-x-2">
-                <button className="px-3 py-1.5 text-sm bg-gray-200 text-gray-900 hover:bg-gray-300 rounded-lg font-medium transition-all duration-200">
+                <button className="px-3 py-1.5 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded-lg font-medium transition-all duration-200">
                   Join Group
                 </button>
               </div>
@@ -237,20 +235,23 @@ export default function MemberLayout({
           </div>
         </header>
 
-        {/* Page Content */}
-        <main className="p-4 lg:p-8 min-h-screen">
+        {/* Page Content with bottom padding for mobile navigation */}
+        <main className="p-4 lg:p-8 min-h-screen pb-20 lg:pb-8">
           {children || (
             <div className="flex items-center justify-center min-h-[400px]">
               <div className="text-center">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Layout Working!
+                  Member Portal
                 </h2>
-                <p className="text-gray-600">No page content provided</p>
+                <p className="text-gray-600">Welcome to your ROSCA dashboard</p>
               </div>
             </div>
           )}
         </main>
       </div>
+
+      {/* Mobile Bottom Navigation */}
+      <MemberBottomNavigation />
     </div>
   );
 }
