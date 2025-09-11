@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "features": "Features",
+    "forOrganizers": "For Organizers",
+    "forMembers": "For Members",
+    "indiaSpecific": "India-Specific",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "tagline": "✅ Live Platform - Start Your WALLET7 Today",
+    "title": "Digital WALLET7 Management Platform",
+    "subtitle": "Organize and manage Rotating Savings & Credit Associations (Wallet7s) with complete transparency and digital tracking. Perfect for community savings groups.",
+    "features": {
+      "communityManaged": "Community Managed",
+      "digitalTracking": "Digital Tracking",
+      "multiLanguage": "Multi-Language Support",
+      "offlineReady": "Offline Ready"
+    },
+    "buttons": {
+      "startAsOrganizer": "Start as Organizer",
+      "joinAsMember": "Join as Member"
+    },
+    "notice": {
+      "title": "💡 Platform Ready:",
+      "description": "Create your Wallet7 group in minutes. Invite members, track contributions, and manage payouts digitally."
+    },
+    "demo": {
+      "monthlyContribution": "Monthly Contribution",
+      "roundInfo": "Round 9 of 12 • Next Payout: Member #9",
+      "liveStatus": "LIVE",
+      "paymentRecorded": "Payment Recorded",
+      "availablePayout": "Available Payout"
+    }
+  }
+}
