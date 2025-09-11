@@ -45,7 +45,6 @@ export default function LandingPage() {
   );
 }
 
-// Navigation Component
 function Navigation() {
   const { t } = useTranslation('landing');
 
@@ -54,18 +53,27 @@ function Navigation() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className='fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-white/20 z-50'>
-      <div className='container-responsive py-4'>
-        <div className='flex items-center justify-between'>
-          <div className='flex items-center space-x-2'>
-            <div className='w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center'>
-              <span className='text-white font-bold text-sm'>R</span>
+      <div className='container-responsive py-3'>
+        {/* Layout: column on mobile, row from md+ */}
+        <div className='flex flex-col md:flex-row items-center justify-between'>
+          {/* Logo and Brand Name */}
+          <div className='flex items-center space-x-2 mb-3 md:mb-0'>
+            <div className='w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center'>
+              <Image
+                src='/icons/app-icons/apple-icon-180x180.png'
+                alt='Logo'
+                width={32}
+                height={32}
+                priority
+                className='object-cover w-8 h-8'
+              />
             </div>
             <span className='text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent'>
               WALLET7
             </span>
           </div>
-
-          <div className='hidden md:flex items-center space-x-8'>
+          {/* Navigation Links */}
+          <div className='hidden md:flex flex-row items-center space-x-8 mb-0'>
             <a
               href='#features'
               className='text-gray-600 hover:text-blue-600 transition-colors'>
@@ -87,7 +95,7 @@ function Navigation() {
               {t('navigation.indiaSpecific')}
             </a>
           </div>
-
+          {/* Language switch/login/register */}
           <div className='flex items-center space-x-3'>
             <LanguageSwitcher
               className='mr-2'

@@ -53,10 +53,6 @@ export default function LanguageSwitcher({
       const stored = localStorage.getItem('wallet7-locale');
       const storedLocale = (stored as SupportedLocale) || 'en';
       setCurrentLocale(storedLocale);
-      console.log(
-        'LanguageSwitcher: Loaded locale from localStorage:',
-        storedLocale
-      );
     }
   }, []);
 
@@ -69,17 +65,8 @@ export default function LanguageSwitcher({
     languages.find((lang) => lang.code === currentLocale) || languages[0];
 
   const handleLanguageChange = (newLocale: SupportedLocale) => {
-    console.log('LanguageSwitcher: Changing language to', newLocale);
-    console.log('LanguageSwitcher: Current locale before change:', locale);
-    console.log(
-      'LanguageSwitcher: Current currentLocale before change:',
-      currentLocale
-    );
-
-    setCurrentLocale(newLocale); // Update immediately for visual feedback
-    console.log('LanguageSwitcher: About to call setLocale with:', newLocale);
+    setCurrentLocale(newLocale);
     setLocale(newLocale);
-    console.log('LanguageSwitcher: setLocale called, closing dropdown');
     setIsOpen(false);
   };
 
