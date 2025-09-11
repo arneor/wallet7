@@ -905,8 +905,15 @@ function Footer() {
         <div className='grid md:grid-cols-4 gap-8 mb-12'>
           <div className='space-y-4'>
             <div className='flex items-center space-x-2'>
-              <div className='w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center'>
-                <span className='text-white font-bold text-sm'>R</span>
+              <div className='w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center'>
+                <Image
+                  src='/icons/app-icons/apple-icon-180x180.png'
+                  alt='Logo'
+                  width={32}
+                  height={32}
+                  priority
+                  className='object-cover w-8 h-8'
+                />
               </div>
               <span className='text-xl font-bold'>WALLET7</span>
             </div>
